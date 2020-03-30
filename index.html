@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/toggle-switch.css" rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
       rel="stylesheet"
@@ -19,7 +20,7 @@
   <body>
     <div class="container">
       <header>
-        <h1><strong>My</strong>Envance</h1>
+        <h1>Envance</h1>
         <div class="bell">
           
           <div class="notification">
@@ -128,6 +129,34 @@
         -->
         <section class='new-members'>
           <h3>New Members</h3>
+          <div class='members-container'>
+            <img src="images/member-2.jpg" alt="profile-pic">
+            <div class='members-text'>
+              <p>Victoria Chambers</p>
+              <a href="#">v.chambers@example.com</a>
+            </div>
+          </div>
+          <div class='members-container'>
+            <img src="images/member-2.jpg" alt="profile-pic">
+            <div class='members-text'>
+              <p>Dale Byrd</p>
+              <a href="#">d.byrd@example.com</a>
+            </div>
+          </div>
+          <div class='members-container'>
+            <img src="images/member-2.jpg" alt="profile-pic">
+            <div class='members-text'>
+              <p>Dawn Wood</p>
+              <a href="#">d.wood@example.com</a>
+            </div>
+          </div>
+          <div class='members-container'>
+            <img src="images/member-2.jpg" alt="profile-pic">
+            <div class='members-text'>
+              <p>Dan Oliver</p>
+              <a href="#">d.oliver@example.com</a>
+            </div>
+          </div>
 
         </section>
         <!-- 
@@ -136,8 +165,99 @@
         -->
         <section class='recent-activity'>
           <h3>Recent Activity</h3>
+          <div class='activity-container'>
+            <img src="images/member-2.jpg" alt="profile-pic">
+            <div class='members-text'>
+              <p>Victoria Chambers commented XXX</p>
+              <span>4 hours ago</span>
+            </div>
+          </div>
+          <div class='activity-container'>
+            <img src="images/member-2.jpg" alt="profile-pic">
+            <div class='members-text'>
+              <p>Dale Byrd liked the post XXX</p>
+              <span>5 hours ago</span>
+            </div>
+          </div>
+          <div class='activity-container'>
+            <img src="images/member-2.jpg" alt="profile-pic">
+            <div class='members-text'>
+              <p>Dawn Wood commented XXX</p>
+              <span>6 hours ago</span>
+            </div>
+          </div>
+          <div class='activity-container'>
+            <img src="images/member-2.jpg" alt="profile-pic">
+            <div class='members-text'>
+              <p>Dan Oliver posted XXX</p>
+              <span>1 day ago</span>
+            </div>
+          </div>
 
         </section>
+        <!-- 
+         SECTION:
+         MESSAGE USER
+        -->
+        <section class='message'>
+          <h3>Message User</h3>
+          <form class='widget-container'>
+            <input class='form-field' id='userField' type="search" placeholder="Search for User">
+            <textarea class='form-area' id="messageField" type="text" placeholder="Message for User"></textarea>
+            <button class='button-primary' id='send'>Send</button>
+          </form>
+
+
+        </section>
+        <!-- 
+         SECTION:
+         SETTINGS
+        -->
+        <section class='settings'>
+          <h3>Settings</h3>
+          <label class="switch-light switch-material" onclick="">
+            <input type="checkbox">
+          
+            <strong>
+              Send E-Mail Notification
+            </strong>
+          
+            <span>
+              <span>Off</span>
+              <span>On</span>
+              <a></a>
+            </span>
+          </label>
+          <label class="switch-light switch-material" onclick="">
+            <input type="checkbox">
+          
+            <strong>
+              Set Profile to Public
+            </strong>
+          
+            <span>
+              <span>Off</span>
+              <span>On</span>
+              <a></a>
+            </span>
+          </label>
+          
+          
+          <select class='form-field' id="timezone">
+            <option selected disabled value="">Select Timezone</option>
+            <option value="">Pacific Time (US)</option>
+            <option value="">Mountain Time (US)</option>
+            <option value="">Central Time (US)</option>
+            <option value="">Eastern Time (US)</option>
+            <option value="">Rio de Janeiro, Brazil</option>
+            <option value="">UTC</option>
+          </select>
+          <div class='settings-button'>
+            <button class='button-primary' id='save'>Save</button>
+            <button class='button-disabled' id='cancel'>Cancel</button>
+          </div>
+        </section>
+
         
       </main>
     </div>
