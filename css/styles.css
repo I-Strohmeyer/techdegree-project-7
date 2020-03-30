@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    color: #8f8f8f;
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    color: #fff;
+    background-color: #7477bf;
+}
+
+header h1 {
+    text-align: center;    
+}
+
+header img {
+    height: 100px;
+    border-radius: 50%;
+}
+
+nav {
+    color: #fff;
+    background-color: #4d4c72;
+}
