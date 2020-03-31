@@ -26,6 +26,7 @@ header {
     color: #fff;
     background-color: #7477bf;
     max-height: 100px;
+    padding: 10px 0;
 }
 
 header h1 {
@@ -64,11 +65,15 @@ nav {
 
 nav a {
     padding: 5px 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 nav img {
-    width:35px;
+    width:30px;
     margin: auto;
+    padding: 10px 0;
 }
 
 main {
@@ -89,8 +94,8 @@ main {
         flex-direction: column;
         justify-content: flex-start;
     } 
-    nav img {
-        
+    nav a {
+      display: flex;  
     }  
 }
 
