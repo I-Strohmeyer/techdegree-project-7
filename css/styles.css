@@ -8,22 +8,93 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax();
+    
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main";
+
+}
+
 header {
+    grid-area: header;
     width: 100%;
     color: #fff;
     background-color: #7477bf;
+    max-height: 100px;
 }
 
 header h1 {
-    text-align: center;    
+    text-align: left;
+    display: inline-block;
+}
+
+.header-right {
+    display: flex;
+    float: right;
+}
+
+
+
+header svg {
+    height: 35px;
 }
 
 header img {
-    height: 100px;
+    height: 35px;
     border-radius: 50%;
 }
 
+header h3 {
+    display: inline-block;
+}
+
 nav {
+    grid-area: nav;
     color: #fff;
     background-color: #4d4c72;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav a {
+    padding: 5px 0;
+}
+
+nav img {
+    width:35px;
+    margin: auto;
+}
+
+main {
+    grid-area: main;
+}
+
+@media (min-width: 768px) {
+    .container {
+        
+        grid-template-columns: 80px 1fr;
+        grid-template-rows: minmax();
+        
+        grid-template-areas: 
+        "header header"
+        "nav main";
+    }
+    nav {
+        flex-direction: column;
+        justify-content: flex-start;
+    } 
+    nav img {
+        
+    }  
+}
+
+
+@media (min-width: 1024px) {
+ /*  change main content to desktop version  */
 }
