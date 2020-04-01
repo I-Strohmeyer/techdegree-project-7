@@ -11,7 +11,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: minmax();
+    grid-template-rows: auto;
     
     grid-template-areas: 
     "header"
@@ -25,18 +25,31 @@ header {
     width: 100%;
     color: #fff;
     background-color: #7477bf;
-    max-height: 100px;
-    padding: 10px 0;
+    padding: 20px;
 }
 
 header h1 {
     text-align: left;
     display: inline-block;
+    line-height: 35px;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .header-right {
     display: flex;
     float: right;
+    align-items: center;
+}
+
+.bell {
+    background-color: indianred; /* TODO remove later */
+    border-right: 5px solid black; /* TODO remove later */
+}
+
+.user {
+
+    background: indigo; /* TODO remove later */
 }
 
 
@@ -78,7 +91,153 @@ nav img {
 
 main {
     grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax();
+    
+    grid-template-areas: 
+    "dashboard"
+    "alert"
+    "traffic"
+    "daily"
+    "mobile"
+    "social"
+    "members"
+    "activity"
+    "message"
+    "settings";
 }
+
+.main-header {
+    grid-area: dashboard;
+    display: flex;
+    grid-template-columns: minmax(90px, 120px) 1fr;
+}
+
+.headline {
+    padding: 20px;
+    font-size: 19px;
+}
+
+.main-header h2,
+.main-header-search {
+    display: inline-block;
+}
+
+.main-header-search {
+    display: flex;
+    justify-content: flex-end;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-bottom-left-radius: 3px;
+    background-color: #f9f9f9;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.main-header-search input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+
+.alert {
+    grid-area: alert;
+    padding:20px;
+    height: 80px; /* TODO remove later */
+    background-color: rgb(105, 255, 118); /* TODO remove later */
+}
+
+.traffic {
+    grid-area: traffic;
+    height: 400px; /* TODO remove later */
+    background-color: rgba(196, 236, 86, 0.705); /* TODO remove later */
+}
+
+
+.traffic h3 {
+    display: inline-block;
+}
+
+.traffic h3,
+.daily h3,
+.mobile h3,
+.social h3,
+.new-members h3,
+.recent-activity h3,
+.message h3,
+.settings h3 {
+    padding: 20px;
+}
+
+.traffic-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.traffic-header ul {
+    display: inline-block;
+    
+}
+
+.traffic-header ul li {
+    display: inline-block;
+    line-height: 56px;
+    padding-right: 10px;    
+}
+
+.daily {
+    grid-area: daily;
+    height: 400px; /* TODO remove later */
+    background-color: rgb(230, 105, 255); /* TODO remove later */
+}
+
+.mobile {
+    grid-area: mobile;
+    height: 400px; /* TODO remove later */
+    background-color: hotpink; /* TODO remove later */
+
+}
+
+.social {
+    grid-area: social;
+    height: 400px; /* TODO remove later */
+    background-color: rgb(105, 255, 193); /* TODO remove later */
+}
+
+.new-members {
+    grid-area: members;
+    height: 400px; /* TODO remove later */
+    background-color: rgba(105, 255, 193, 0.336); /* TODO remove later */
+}
+
+.new-members img,
+.recent-activity img {
+    border-radius: 50%;
+}
+
+.recent-activity {
+    grid-area: activity;
+    height: 400px; /* TODO remove later */
+    background-color: rgb(255, 240, 105); /* TODO remove later */
+}
+
+.message {
+    grid-area: message;
+    height: 400px; /* TODO remove later */
+    background-color: rgb(158, 105, 255); /* TODO remove later */
+}
+
+.settings {
+    grid-area: settings;
+    height: 400px; /* TODO remove later */
+    background-color: rgb(255, 105, 130); /* TODO remove later */
+}
+
+
+
+
+
 
 @media (min-width: 768px) {
     .container {
@@ -95,11 +254,25 @@ main {
         justify-content: flex-start;
     } 
     nav a {
-      display: flex;  
+      display: flex;
+      flex-grow: 0;  
     }  
 }
 
 
 @media (min-width: 1024px) {
  /*  change main content to desktop version  */
+ main {
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: minmax();
+    
+    grid-template-areas: 
+    "dashboard dashboard"
+    "alert alert"
+    "traffic traffic"
+    "daily mobile"
+    "social social"
+    "members activity"
+    "message settings";
+}
 }
