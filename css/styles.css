@@ -1,101 +1,101 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-  
+
 body {
-    color: #8f8f8f;
-    background: #fff;
-    font-family: 'Montserrat', sans-serif;
+  color: #8f8f8f;
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+  grid-template-areas:
     "header"
     "nav"
     "main";
-
 }
 
 header {
-    grid-area: header;
-    width: 100%;
-    color: #fff;
-    background-color: #7477bf;
-    padding: 20px;
+  grid-area: header;
+  width: 100%;
+  color: #fff;
+  background-color: #7477bf;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
-    text-align: left;
-    display: inline-block;
-    line-height: 35px;
-    font-size: 1.5em;
-    font-weight: bold;
+  text-align: left;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .header-right {
-    display: flex;
-    float: right;
-    align-items: center;
+  display: flex;
+
+  align-items: center;
 }
 
 .bell {
-    background-color: indianred; /* TODO remove later */
-    border-right: 5px solid black; /* TODO remove later */
+  border-right: 1px solid #4d4c72;
+  height: 30px;
+  padding-right: 4px;
 }
 
-.user {
-
-    background: indigo; /* TODO remove later */
+.user h3 {
+  display: none;
 }
-
-
 
 header svg {
-    height: 35px;
+  height: 30px;
 }
 
 header img {
-    height: 35px;
-    border-radius: 50%;
+  height: 30px;
+  border-radius: 50%;
+  padding-left: 10px;
 }
 
 header h3 {
-    display: inline-block;
+  display: inline-block;
 }
 
 nav {
-    grid-area: nav;
-    color: #fff;
-    background-color: #4d4c72;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  grid-area: nav;
+  color: #fff;
+  background-color: #4d4c72;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 nav a {
-    padding: 5px 0;
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
+  padding: 5px 0;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 nav img {
-    width:30px;
-    margin: auto;
-    padding: 10px 0;
+  width: 30px;
+  margin: auto;
+  padding: 10px 0;
 }
 
 main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax();
-    
-    grid-template-areas: 
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax();
+
+  grid-template-areas:
     "dashboard"
     "alert"
     "traffic"
@@ -109,170 +109,177 @@ main {
 }
 
 .main-header {
-    grid-area: dashboard;
-    display: flex;
-    grid-template-columns: minmax(90px, 120px) 1fr;
+  grid-area: dashboard;
+  display: flex;
+  grid-template-columns: minmax(90px, 120px) 1fr;
 }
 
 .headline {
-    padding: 20px;
-    font-size: 19px;
+  padding: 20px;
+  font-size: 19px;
 }
 
 .main-header h2,
 .main-header-search {
-    display: inline-block;
+  display: inline-block;
 }
 
 .main-header-search {
-    display: flex;
-    justify-content: flex-end;
-    border-left: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    border-bottom-left-radius: 3px;
-    background-color: #f9f9f9;
-    flex-grow: 1;
-    padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-bottom-left-radius: 3px;
+  background-color: #f9f9f9;
+  flex-grow: 1;
+  padding: 10px;
 }
 
 .main-header-search input {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding-left: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-left: 8px;
 }
 
 .alert {
-    grid-area: alert;
-    padding:20px;
-    height: 80px; /* TODO remove later */
-    background-color: rgb(105, 255, 118); /* TODO remove later */
+  grid-area: alert;
+  padding: 20px;
+  min-height: 80px; /* TODO remove later */
+  border-bottom: 1px solid #ccc;
 }
 
 .traffic {
-    grid-area: traffic;
-    height: 400px; /* TODO remove later */
-    background-color: rgba(196, 236, 86, 0.705); /* TODO remove later */
+  grid-area: traffic;
+  height: 400px; /* TODO remove later */
+  border-bottom: 1px solid #ccc;
 }
-
 
 .traffic h3 {
-    display: inline-block;
+  display: inline-block;
 }
 
-.traffic h3,
-.daily h3,
-.mobile h3,
-.social h3,
-.new-members h3,
-.recent-activity h3,
-.message h3,
-.settings h3 {
-    padding: 20px;
+main section {
+  padding: 20px;
 }
 
 .traffic-header {
-    display: flex;
-    justify-content: space-between;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .traffic-header ul {
-    display: inline-block;
-    
+  display: inline-block;
 }
 
 .traffic-header ul li {
-    display: inline-block;
-    line-height: 56px;
-    padding-right: 10px;    
+  display: inline-block;
+  padding-right: 10px;
 }
 
 .daily {
-    grid-area: daily;
-    height: 400px; /* TODO remove later */
-    background-color: rgb(230, 105, 255); /* TODO remove later */
+  grid-area: daily;
+  height: 400px; /* TODO remove later */
+  border-bottom: 1px solid #ccc;
 }
 
 .mobile {
-    grid-area: mobile;
-    height: 400px; /* TODO remove later */
-    background-color: hotpink; /* TODO remove later */
-
+  grid-area: mobile;
+  height: 400px; /* TODO remove later */
+  border-bottom: 1px solid #ccc;
 }
 
 .social {
-    grid-area: social;
-    height: 400px; /* TODO remove later */
-    background-color: rgb(105, 255, 193); /* TODO remove later */
+  grid-area: social;
+  height: 400px; /* TODO remove later */
+  border-bottom: 1px solid #ccc;
+}
+
+.twitter,
+.facebook,
+.google {
+  display: inline-block;
+  border: 1px solid black; /* change*/
+  background: burlywood; /* change*/
+  border-radius: 4px;
 }
 
 .new-members {
-    grid-area: members;
-    height: 400px; /* TODO remove later */
-    background-color: rgba(105, 255, 193, 0.336); /* TODO remove later */
+  grid-area: members;
+  height: 400px; /* TODO remove later */
+  border-bottom: 1px solid #ccc;
 }
 
 .new-members img,
 .recent-activity img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .recent-activity {
-    grid-area: activity;
-    height: 400px; /* TODO remove later */
-    background-color: rgb(255, 240, 105); /* TODO remove later */
+  grid-area: activity;
+  height: 400px; /* TODO remove later */
+  border-bottom: 1px solid #ccc;
 }
 
 .message {
-    grid-area: message;
-    height: 400px; /* TODO remove later */
-    background-color: rgb(158, 105, 255); /* TODO remove later */
+  grid-area: message;
+  height: 400px; /* TODO remove later */
+  border-bottom: 1px solid #ccc;
 }
 
 .settings {
-    grid-area: settings;
-    height: 400px; /* TODO remove later */
-    background-color: rgb(255, 105, 130); /* TODO remove later */
+  grid-area: settings;
+  height: 400px; /* TODO remove later */
+  border-bottom: 1px solid #ccc;
 }
-
-
-
-
-
 
 @media (min-width: 768px) {
-    .container {
-        
-        grid-template-columns: 80px 1fr;
-        grid-template-rows: minmax();
-        
-        grid-template-areas: 
-        "header header"
-        "nav main";
-    }
-    nav {
-        flex-direction: column;
-        justify-content: flex-start;
-    } 
-    nav a {
-      display: flex;
-      flex-grow: 0;  
-    }  
-}
+  .container {
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: minmax();
 
+    grid-template-areas:
+      "header header"
+      "nav main";
+  }
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  nav a {
+    display: flex;
+    flex-grow: 0;
+  }
+  .user h3 {
+    display: inline-block;
+  }
+  .traffic-header {
+    display: flex;
+  }
+}
 
 @media (min-width: 1024px) {
- /*  change main content to desktop version  */
- main {
-    grid-template-columns:  1fr 1fr;
+  /*  change main content to desktop version  */
+  main {
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: minmax();
-    
-    grid-template-areas: 
-    "dashboard dashboard"
-    "alert alert"
-    "traffic traffic"
-    "daily mobile"
-    "social social"
-    "members activity"
-    "message settings";
-}
+
+    grid-template-areas:
+      "dashboard dashboard"
+      "alert alert"
+      "traffic traffic"
+      "daily mobile"
+      "social social"
+      "members activity"
+      "message settings";
+  }
+  .mobile {
+    border-left: 1px solid #ccc;
+  }
+  .recent-activity {
+    border-left: 1px solid #ccc;
+  }
+  .settings {
+    border-left: 1px solid #ccc;
+  }
 }
