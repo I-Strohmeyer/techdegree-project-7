@@ -412,9 +412,7 @@ section h3 {
   .traffic-header {
     display: flex;
   }
-  .activity-container {
-      
-  }
+  
 }
 
 @media (min-width: 1024px) {
