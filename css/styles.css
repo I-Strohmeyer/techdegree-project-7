@@ -2,6 +2,19 @@
   box-sizing: border-box;
 }
 
+:root {
+    --app-primary-color: #7477bf;
+    --app-secondary-color: #4d4c72;
+}
+
+/* 
+Placeholder for mockup colors:
+
+primary: #7477bf;
+secondary: #4d4c72;
+
+*/
+
 body {
   color: #8f8f8f;
   background: #fff;
@@ -23,7 +36,7 @@ header {
   grid-area: header;
   width: 100%;
   color: #fff;
-  background-color: #7477bf;
+  background-color: var(--app-primary-color);
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -44,7 +57,7 @@ header h1 {
 }
 
 .bell {
-  border-right: 1px solid #4d4c72;
+  border-right: 1px solid var(--app-secondary-color);
   height: 30px;
   padding-right: 4px;
 }
@@ -70,7 +83,7 @@ header h3 {
 nav {
   grid-area: nav;
   color: #fff;
-  background-color: #4d4c72;
+  background-color: var(--app-secondary-color);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -149,7 +162,7 @@ main {
 
 .alert-banner {
   color: #fff;
-  background-color: #7477bf;
+  background-color: var(--app-primary-color);
    /*margin-left: 20px;
   margin-right: 20px; */
   padding: 12px;
@@ -233,7 +246,7 @@ section h3 {
 }
 
 .social-image {
-    background-color: #7477bf;
+    background-color: var(--app-primary-color);
     border-radius: 50%;
     padding: 18px;
 }
@@ -248,7 +261,7 @@ section h3 {
 
 .social-tag {
     font-weight: 700;
-    color: #7477bf;
+    color: var(--app-primary-color);
 }
 
 .social-number {
@@ -296,12 +309,12 @@ section h3 {
 }
 
 .members-text a {
-    color: #7477bf;
+    color: var(--app-primary-color);
     text-decoration: none;
 }
 
 .members-text a:hover {
-    color: #4d4c72;
+    color: var(--app-secondary-color);
     text-decoration: underline;
 }
 
@@ -355,7 +368,7 @@ section h3 {
 
 .button-primary {
     color: #fff;
-    background-color: #7477bf;
+    background-color: var(--app-primary-color);
     
 }
 
