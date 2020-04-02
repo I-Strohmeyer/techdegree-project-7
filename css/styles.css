@@ -147,17 +147,25 @@ main {
   
 }
 
-.alert-wrapper {
+.alert-banner {
   color: #fff;
   background-color: #7477bf;
    /*margin-left: 20px;
   margin-right: 20px; */
   padding: 12px;
   border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.alert-title {
+.alert-banner span {
     font-weight: 700;
+}
+
+.alert-banner-close {
+    font-weight: 700;
+    padding: 5px 10px;    
 }
 
 .traffic {
@@ -430,6 +438,12 @@ section h3 {
       "members activity"
       "message settings";
   }
+  .headline {
+      padding: 20px 20px 20px 30px;
+  }
+  .main-header-search {
+      padding: 10px 30px;
+  }
   .mobile {
     border-left: 1px solid #ccc;
   }
@@ -450,8 +464,11 @@ section h3 {
   .form-area {
       height: 116px;
   }
-  main section {
+  .alert {
       padding: 30px;
+  }
+  main section {
+      padding: 30px
   }
 
 }
