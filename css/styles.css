@@ -483,5 +483,7 @@ section h3 {
   main section {
       padding: 30px
   }
-
+  canvas {
+      height: 300
+  }
 }
