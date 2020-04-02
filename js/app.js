@@ -3,7 +3,7 @@ const alertBanner = document.getElementById("alert");
 
 // create the html for the banner  
 alertBanner.innerHTML =
-    `<div class="alert-banner"><p><span>Alert:</span> You have <span>6</span> overdue tasks to complete</p><a class="alert-banner-close" title="Close">x</a></div>`;
+    `<div class="alert-banner"><p><span>Alert:</span> You have <span>6</span> overdue tasks to complete</p><a class="alert-banner-close">x</a></div>`;
 
 // listens to click on 'X' on banner    
 alertBanner.addEventListener('click', e => {
@@ -26,7 +26,9 @@ let trafficData = {
 };
 
 let trafficOptions = {
-    aspectRation: 2.5,
+    responsive: true,
+    maintainAspectRatio: false,
+    
     animation: {
         duration: 0
     },

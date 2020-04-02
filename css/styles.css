@@ -181,6 +181,12 @@ main {
     padding: 5px 10px;    
 }
 
+.alert-banner-close:hover {
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: rgba(250, 250, 250, .2);
+}
+
 .traffic {
   grid-area: traffic;
   
@@ -189,6 +195,11 @@ main {
 
 .traffic h3 {
   display: inline-block;
+}
+
+.widget-container-full {
+    position: relative;
+    max-height: 250px;
 }
 
 main section {
@@ -433,7 +444,9 @@ section h3 {
   .traffic-header {
     display: flex;
   }
-  
+  .widget-container-full {
+      height: 325px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -483,7 +496,7 @@ section h3 {
   main section {
       padding: 30px
   }
-  canvas {
-      height: 300
+  .widget-container-full {
+      height: 426px;
   }
 }
