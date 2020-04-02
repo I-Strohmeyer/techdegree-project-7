@@ -132,7 +132,7 @@ main {
   border-bottom-left-radius: 3px;
   background-color: #f9f9f9;
   flex-grow: 1;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .main-header-search input {
@@ -144,13 +144,25 @@ main {
 .alert {
   grid-area: alert;
   padding: 20px;
-  min-height: 80px; /* TODO remove later */
-  border-bottom: 1px solid #ccc;
+  
+}
+
+.alert-wrapper {
+  color: #fff;
+  background-color: #7477bf;
+   /*margin-left: 20px;
+  margin-right: 20px; */
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.alert-title {
+    font-weight: 700;
 }
 
 .traffic {
   grid-area: traffic;
-  height: 400px; /* TODO remove later */
+  
   border-bottom: 1px solid #ccc;
 }
 
@@ -162,14 +174,15 @@ main section {
   padding: 20px;
 }
 
+section h3 {
+   padding-bottom: 20px;
+   font-weight: 700; 
+}
+
 .traffic-header {
   display: block;
   justify-content: space-between;
   align-items: center;
-}
-
-.traffic-header ul {
-  display: inline-block;
 }
 
 .traffic-header ul li {
@@ -179,59 +192,202 @@ main section {
 
 .daily {
   grid-area: daily;
-  height: 400px; /* TODO remove later */
+  
   border-bottom: 1px solid #ccc;
 }
 
 .mobile {
   grid-area: mobile;
-  height: 400px; /* TODO remove later */
+  
   border-bottom: 1px solid #ccc;
 }
 
 .social {
   grid-area: social;
-  height: 400px; /* TODO remove later */
+  
   border-bottom: 1px solid #ccc;
 }
 
-.twitter,
-.facebook,
-.google {
-  display: inline-block;
-  border: 1px solid black; /* change*/
-  background: burlywood; /* change*/
+.social-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.social-tile {
+  display: flex;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
   border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.social-image {
+    background-color: #7477bf;
+    border-radius: 50%;
+    padding: 18px;
+}
+
+.social-tile img {
+    height: 40px;
+}
+
+.social-text {
+    margin-left: 20px;
+}
+
+.social-tag {
+    font-weight: 700;
+    color: #7477bf;
+}
+
+.social-number {
+    font-size: 40px;
 }
 
 .new-members {
   grid-area: members;
-  height: 400px; /* TODO remove later */
+  
   border-bottom: 1px solid #ccc;
 }
 
 .new-members img,
 .recent-activity img {
   border-radius: 50%;
+  height: 50px;
 }
 
 .recent-activity {
   grid-area: activity;
-  height: 400px; /* TODO remove later */
+  
   border-bottom: 1px solid #ccc;
 }
+
+.activity-container {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.members-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.members-container span {
+    font-size: 14px;
+}
+
+.member-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.members-text a {
+    color: #7477bf;
+    text-decoration: none;
+}
+
+.members-text a:hover {
+    color: #4d4c72;
+    text-decoration: underline;
+}
+
+/* Activity */
+
+.members-text {
+    margin-left: 10px;
+}
+
+.members-text p {
+    line-height: 1.2em;
+}
+
+.members-text span {
+    font-size: 14px;
+}
+
+/* Message */
 
 .message {
   grid-area: message;
-  height: 400px; /* TODO remove later */
   border-bottom: 1px solid #ccc;
 }
 
+.form-field,
+.form-area,
+.button-primary {
+    
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-field {
+    box-sizing: border-box;
+
+}
+
+.form-area {
+    height: 100px
+}
+
+.form-field,
+.form-area {
+    padding: 8px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    display: block;
+    font-size: 16px;
+}
+
+.button-primary {
+    color: #fff;
+    background-color: #7477bf;
+    
+}
+
+.button-primary,
+.button-disabled {
+    padding: 12px;
+    border: none;
+    
+}
+
+
+/* Settings */
+
 .settings {
   grid-area: settings;
-  height: 400px; /* TODO remove later */
   border-bottom: 1px solid #ccc;
 }
+
+.switch-light {
+    margin-bottom: 25px;
+    
+}
+
+.button-disabled {
+    color: #fff;
+    background-color: #8f8f8f;
+    width: 45%;
+    border-radius: 5px;
+    float: right;
+}
+
+#save {
+    width: 45%;
+}
+
+
+/*********************************
+* BREAKPOINTS
+*********************************/   
+
 
 @media (min-width: 768px) {
   .container {
@@ -255,6 +411,9 @@ main section {
   }
   .traffic-header {
     display: flex;
+  }
+  .activity-container {
+      
   }
 }
 
@@ -282,4 +441,19 @@ main section {
   .settings {
     border-left: 1px solid #ccc;
   }
+  .social-container {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  .social-tile {
+      flex-basis: 32%;
+
+  }
+  .form-area {
+      height: 116px;
+  }
+  main section {
+      padding: 30px;
+  }
+
 }
