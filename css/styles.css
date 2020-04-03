@@ -72,6 +72,10 @@ header h1 {
     background-color: #44ef44;
 }
 
+.transform:hover {
+    transform: scale(1.1); 
+}
+
 .user {
     border-left: 1px solid #ffffff2e;
 }
