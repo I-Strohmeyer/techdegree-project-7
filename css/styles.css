@@ -107,6 +107,10 @@ nav {
   justify-content: space-around;
 }
 
+.active-icon {
+    border-bottom: 3px solid #58db81;
+}
+
 nav a {
   padding: 5px 0;
   display: flex;
@@ -164,12 +168,21 @@ main {
   background-color: #f9f9f9;
   flex-grow: 1;
   padding: 10px 20px;
+  position: relative;
 }
 
 .main-header-search input {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding-left: 8px;
+}
+
+.search-icon {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 3px;
+    right: 20px;
 }
 
 .alert {
@@ -323,30 +336,24 @@ section h3 {
   height: 50px;
 }
 
-.recent-activity {
-  grid-area: activity;
-  
-  border-bottom: 1px solid #ccc;
-}
-
-.activity-container {
-    display: flex;
-    margin-bottom: 20px;
-    align-items: center;
-}
-
 .members-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    padding: 15px 0;
     align-items: center;
+}
+
+.underlined {
+    
+    border-bottom: 1px solid #f9f9f9;
 }
 
 .members-container span {
     font-size: 14px;
 }
 
-.member-wrapper {
+.member-wrapper,
+.activity-wrapper {
     display: flex;
     align-items: center;
 }
@@ -363,6 +370,18 @@ section h3 {
 
 /* Activity */
 
+.recent-activity {
+    grid-area: activity;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .activity-container {
+      display: flex;
+      padding: 15px 0;
+      align-items: center;
+      justify-content: space-between;
+  }
+
 .members-text {
     margin-left: 10px;
 }
@@ -373,6 +392,12 @@ section h3 {
 
 .members-text span {
     font-size: 14px;
+}
+
+.arrow {
+    font-weight: 700;
+    color: var(--app-primary-color);
+    transform: rotate(-90deg);
 }
 
 /* Message */
@@ -432,7 +457,13 @@ section h3 {
 
 .switch-light {
     margin-bottom: 25px;
-    
+    display: flex;
+    align-items: center;    
+}
+
+.switch-light strong {
+    flex-grow: 1;
+    flex-basis: 200px;
 }
 
 .button-disabled {
@@ -446,6 +477,14 @@ section h3 {
 #save {
     width: 45%;
 }
+
+#timezone {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+
 
 
 /*********************************
@@ -469,6 +508,7 @@ section h3 {
   nav a {
     display: flex;
     flex-grow: 0;
+    margin-bottom: 20px;
   }
   .user h3 {
     display: inline-block;
@@ -479,6 +519,11 @@ section h3 {
   .widget-container-full {
       height: 325px;
   }
+  .active-icon {
+    border-left: 3px solid #58db81;
+    border-bottom: none;
+    margin-top: 10px;
+}
 }
 
 @media (min-width: 1024px) {
@@ -530,5 +575,8 @@ section h3 {
   }
   .widget-container-full {
       height: 426px;
+  }
+  .switch-light {
+      margin-bottom: 40px;
   }
 }
