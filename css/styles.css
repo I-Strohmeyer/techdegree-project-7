@@ -52,14 +52,28 @@ header h1 {
 
 .header-right {
   display: flex;
-
   align-items: center;
 }
 
 .bell {
-  border-right: 1px solid var(--app-secondary-color);
+  border-right: 1px solid #4d4c724f;
   height: 30px;
-  padding-right: 4px;
+  padding-right: 20px;
+  position: relative;
+}
+
+#green-dot {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    top: 0;
+    right: 19px;
+    border-radius: 50%;
+    background-color: #44ef44;
+}
+
+.user {
+    border-left: 1px solid #ffffff2e;
 }
 
 .user h3 {
@@ -73,7 +87,7 @@ header svg {
 header img {
   height: 30px;
   border-radius: 50%;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 header h3 {
