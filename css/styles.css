@@ -3,8 +3,8 @@
 }
 
 :root {
-    --app-primary-color: #7477bf;
-    --app-secondary-color: #4d4c72;
+  --app-primary-color: #7477bf;
+  --app-secondary-color: #4d4c72;
 }
 
 /* 
@@ -63,21 +63,21 @@ header h1 {
 }
 
 #green-dot {
-    position: absolute;
-    height: 8px;
-    width: 8px;
-    top: 0;
-    right: 19px;
-    border-radius: 50%;
-    background-color: #44ef44;
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  top: 0;
+  right: 19px;
+  border-radius: 50%;
+  background-color: #44ef44;
 }
 
 .transform:hover {
-    transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .user {
-    border-left: 1px solid #ffffff2e;
+  border-left: 1px solid #ffffff2e;
 }
 
 .user h3 {
@@ -108,7 +108,7 @@ nav {
 }
 
 .active-icon {
-    border-bottom: 3px solid #58db81;
+  border-bottom: 3px solid #58db81;
 }
 
 nav a {
@@ -178,23 +178,22 @@ main {
 }
 
 .search-icon {
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    top: 3px;
-    right: 20px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 3px;
+  right: 20px;
 }
 
 .alert {
   grid-area: alert;
   padding: 20px;
-  
 }
 
 .alert-banner {
   color: #fff;
   background-color: var(--app-primary-color);
-   /*margin-left: 20px;
+  /*margin-left: 20px;
   margin-right: 20px; */
   padding: 12px;
   border-radius: 4px;
@@ -204,35 +203,33 @@ main {
 }
 
 .alert-banner span {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .alert-banner-close {
-    font-weight: 700;
-    padding: 5px 10px;    
+  font-weight: 700;
+  padding: 5px 10px;
 }
 
 .alert-banner-close:hover {
-    cursor: pointer;
-    border-radius: 4px;
-    background-color: rgba(250, 250, 250, .2);
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: rgba(250, 250, 250, 0.2);
 }
 
 .traffic {
   grid-area: traffic;
-  
+
   border-bottom: 1px solid #ccc;
 }
-
-
 
 .traffic h3 {
   display: inline-block;
 }
 
 .widget-container-full {
-    position: relative;
-    height: 200px;
+  position: relative;
+  height: 200px;
 }
 
 main section {
@@ -240,8 +237,8 @@ main section {
 }
 
 section h3 {
-   padding-bottom: 20px;
-   font-weight: 700; 
+  padding-bottom: 20px;
+  font-weight: 700;
 }
 
 .traffic-header {
@@ -258,34 +255,33 @@ section h3 {
 }
 
 .active {
-    background-color: #58db81;
-    color: #fff;
-    padding: 5px;
-    border-radius: 4px;
+  background-color: #58db81;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
 }
 
 .daily {
   grid-area: daily;
-  
+
   border-bottom: 1px solid #ccc;
 }
 
 .mobile {
   grid-area: mobile;
-  
+
   border-bottom: 1px solid #ccc;
 }
 
 .social {
   grid-area: social;
-  
+
   border-bottom: 1px solid #ccc;
 }
 
 .social-container {
-    display: flex;
-    flex-direction: column;
-    
+  display: flex;
+  flex-direction: column;
 }
 
 .social-tile {
@@ -299,34 +295,34 @@ section h3 {
 }
 
 .social-image {
-    background-color: var(--app-primary-color);
-    border-radius: 50%;
-    padding: 20px;
-    height: 80px;
-    width:80px;
+  background-color: var(--app-primary-color);
+  border-radius: 50%;
+  padding: 20px;
+  height: 80px;
+  width: 80px;
 }
 
 #social-logo {
-    height: 40px;
-    width: 40px;
+  height: 40px;
+  width: 40px;
 }
 
 .social-text {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .social-tag {
-    font-weight: 700;
-    color: var(--app-primary-color);
+  font-weight: 700;
+  color: var(--app-primary-color);
 }
 
 .social-number {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .new-members {
   grid-area: members;
-  
+
   border-bottom: 1px solid #ccc;
 }
 
@@ -337,67 +333,70 @@ section h3 {
 }
 
 .members-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 0;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  align-items: center;
 }
 
 .underlined {
-    
-    border-bottom: 1px solid #f9f9f9;
+  border-bottom: 1px solid #f9f9f9;
 }
 
 .members-container span {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .member-wrapper,
 .activity-wrapper {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .members-text a {
-    color: var(--app-primary-color);
-    text-decoration: none;
+  color: var(--app-primary-color);
+  text-decoration: none;
 }
 
 .members-text a:hover {
-    color: var(--app-secondary-color);
-    text-decoration: underline;
+  color: var(--app-secondary-color);
+  text-decoration: underline;
 }
 
 /* Activity */
 
 .recent-activity {
-    grid-area: activity;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .activity-container {
-      display: flex;
-      padding: 15px 0;
-      align-items: center;
-      justify-content: space-between;
-  }
+  grid-area: activity;
+  border-bottom: 1px solid #ccc;
+}
+
+.activity-container {
+  display: flex;
+  padding: 15px 0;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .members-text {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .members-text p {
-    line-height: 1.2em;
+  line-height: 1.2em;
 }
 
 .members-text span {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .arrow {
-    font-weight: 700;
-    color: var(--app-primary-color);
-    transform: rotate(-90deg);
+  font-weight: 700;
+  color: var(--app-primary-color);
+  transform: rotate(-90deg);
+}
+
+.arrow:hover {
+  cursor: pointer;
 }
 
 /* Message */
@@ -410,43 +409,38 @@ section h3 {
 .form-field,
 .form-area,
 .button-primary {
-    
-    border-radius: 5px;
-    margin-bottom: 15px;
-    width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 100%;
 }
 
 .form-field {
-    box-sizing: border-box;
-
+  box-sizing: border-box;
 }
 
 .form-area {
-    height: 100px
+  height: 100px;
 }
 
 .form-field,
 .form-area {
-    padding: 8px;
-    border: 1px solid #ccc;
-    background: #f9f9f9;
-    display: block;
-    font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  display: block;
+  font-size: 16px;
 }
 
 .button-primary {
-    color: #fff;
-    background-color: var(--app-primary-color);
-    
+  color: #fff;
+  background-color: var(--app-primary-color);
 }
 
 .button-primary,
 .button-disabled {
-    padding: 12px;
-    border: none;
-    
+  padding: 12px;
+  border: none;
 }
-
 
 /* Settings */
 
@@ -456,41 +450,37 @@ section h3 {
 }
 
 .switch-light {
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;    
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
 }
 
 .switch-light strong {
-    flex-grow: 1;
-    flex-basis: 200px;
+  flex-grow: 1;
+  flex-basis: 200px;
 }
 
 .button-disabled {
-    color: #fff;
-    background-color: #8f8f8f;
-    width: 45%;
-    border-radius: 5px;
-    float: right;
+  color: #fff;
+  background-color: #8f8f8f;
+  width: 45%;
+  border-radius: 5px;
+  float: right;
 }
 
 #save {
-    width: 45%;
+  width: 45%;
 }
 
 #timezone {
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
-
-
-
 
 /*********************************
 * BREAKPOINTS
-*********************************/   
-
+*********************************/
 
 @media (min-width: 768px) {
   .container {
@@ -517,13 +507,13 @@ section h3 {
     display: flex;
   }
   .widget-container-full {
-      height: 325px;
+    height: 325px;
   }
   .active-icon {
     border-left: 3px solid #58db81;
     border-bottom: none;
     margin-top: 10px;
-}
+  }
 }
 
 @media (min-width: 1024px) {
@@ -542,10 +532,10 @@ section h3 {
       "message settings";
   }
   .headline {
-      padding: 20px 20px 20px 30px;
+    padding: 20px 20px 20px 30px;
   }
   .main-header-search {
-      padding: 10px 30px;
+    padding: 10px 30px;
   }
   .mobile {
     border-left: 1px solid #ccc;
@@ -557,26 +547,29 @@ section h3 {
     border-left: 1px solid #ccc;
   }
   .social-container {
-      flex-direction: row;
-      justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .social-tile {
-      flex-basis: 32%;
-
+    flex-basis: 32%;
   }
   .form-area {
-      height: 116px;
+    height: 116px;
   }
   .alert {
-      padding: 30px;
+    padding: 30px;
   }
   main section {
-      padding: 30px
+    padding: 30px;
   }
   .widget-container-full {
-      height: 426px;
+    height: 426px;
   }
   .switch-light {
-      margin-bottom: 40px;
+    margin-bottom: 40px;
+  }
+  .switch-light strong {
+    flex-grow: 0;
+    flex-basis: 400px;
   }
 }
