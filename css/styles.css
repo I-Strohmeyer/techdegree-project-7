@@ -193,13 +193,15 @@ main {
   border-bottom: 1px solid #ccc;
 }
 
+
+
 .traffic h3 {
   display: inline-block;
 }
 
 .widget-container-full {
     position: relative;
-    max-height: 250px;
+    height: 200px;
 }
 
 main section {
@@ -215,11 +217,20 @@ section h3 {
   display: block;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .traffic-header ul li {
   display: inline-block;
   padding-right: 10px;
+  font-weight: 700;
+}
+
+.active {
+    background-color: #58db81;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
 }
 
 .daily {
