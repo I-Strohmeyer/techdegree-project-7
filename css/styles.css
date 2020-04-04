@@ -306,7 +306,7 @@ section h3 {
   width: 80px;
 }
 
-#social-logo {
+.social-logo {
   height: 40px;
   width: 40px;
 }
@@ -492,26 +492,26 @@ section h3 {
   -webkit-appearance: none;
 }
 
-.dropdown{
-    position: relative;
+.dropdown {
+  position: relative;
 }
 
 .dropdown svg {
-    position: absolute;
-    top: 8px;
-    right: 10px;
-    height: 20px;
-    width: 20px;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
 }
 
 .message h3 {
-    float: left;
+  float: left;
 }
 
 #error {
-    display: none;
-    color: red;
-    float: right;
+  display: none;
+  color: red;
+  float: right;
 }
 
 /*********************************
@@ -520,79 +520,99 @@ section h3 {
 
 /* Modal background */
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 100; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    -webkit-animation-name: fadeIn; 
-    -webkit-animation-duration: 0.4s;
-    animation-name: fadeIn;
-    animation-duration: 0.4s
-  }
-  
-  /* Content */
-  .modal-content {
-    position: fixed;
-    bottom: 0;
-    background-color: #64dc52;
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    width: 100%;
-    padding: 30px;
-    -webkit-animation-name: slideIn;
-    -webkit-animation-duration: 0.4s;
-    animation-name: slideIn;
-    animation-duration: 0.4s
-  }
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
 
-  .modal-content p {
-      line-height: 30px;
-  }
+/* Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #64dc52;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  padding: 30px;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
 
-  /* The Close Button */
+.modal-content p {
+  line-height: 30px;
+}
+
+/* The Close Button */
 .close {
-    color: #fff;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 30px;
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
   }
-  
-  .close:hover,
-  .close:focus {
-    text-decoration: none;
-    cursor: pointer;
+  to {
+    bottom: 0;
+    opacity: 1;
   }
-  
-  /* Add Animation */
-  @-webkit-keyframes slideIn {
-    from {bottom: -300px; opacity: 0} 
-    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
   }
-  
-  @keyframes slideIn {
-    from {bottom: -300px; opacity: 0}
-    to {bottom: 0; opacity: 1}
+  to {
+    bottom: 0;
+    opacity: 1;
   }
-  
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0} 
-    to {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  @keyframes fadeIn {
-    from {opacity: 0} 
-    to {opacity: 1}
+  to {
+    opacity: 1;
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /*********************************
 * BREAKPOINTS
