@@ -115,3 +115,51 @@ let mobileChart = new Chart(mobileCanvas, {
     data: mobileData,
     options: mobileOptions
 });
+
+// MESSAGE USER
+
+
+
+////////////////////////////
+
+// Get the modal
+const modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+const btnsend = document.getElementById("send");
+
+// Get the <span> element that closes the modal
+const span = document.getElementsByClassName("close")[0];
+
+// Get error message
+const error = document.getElementById("error");
+
+// Get search user field and message field
+const userSearch = document.getElementById("userField");
+const messageField = document.getElementById("messageField");
+
+
+// When the user clicks the button, check for other input field filled out
+btnsend.onclick = function() {
+    if (userSearch.value == "" || messageField.value == "")
+    error.style.display = "block"
+  // if filled out display modal  
+  else {
+      modal.style.display = "block";
+      error.style.display = "none";
+      userSearch.value = "";
+      messageField.value = "";
+  }
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    }
+}
